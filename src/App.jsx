@@ -98,6 +98,7 @@ function ChatRoom() {
       createdAt: serverTimestamp(),
       uid,
       photoURL,
+      email: auth.currentUser.email,
     });
 
     setFormValue("");
