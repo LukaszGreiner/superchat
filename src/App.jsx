@@ -42,7 +42,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1>⚛️🔥💬</h1>
+        <h1>💬💬💬</h1>
         <SignOut />
       </header>
 
@@ -62,9 +62,7 @@ function SignIn() {
       <button className="sign-in" onClick={signInWithGoogle}>
         Sign in with Google
       </button>
-      <p>
-        Do not violate the community guidelines or you will be banned for life!
-      </p>
+      <p className={"warning"}>Nie wprowadzaj ważnych danych.</p>
     </>
   );
 }
@@ -118,11 +116,11 @@ function ChatRoom() {
         <input
           value={formValue}
           onChange={(e) => setFormValue(e.target.value)}
-          placeholder="say something nice"
+          placeholder="Napisz coś miłego"
         />
 
         <button type="submit" disabled={!formValue}>
-          🕊️
+          ◀
         </button>
       </form>
     </>
